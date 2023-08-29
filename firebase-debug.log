@@ -1,0 +1,166 @@
+[debug] [2023-08-29T18:28:55.247Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T18:28:55.248Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-29T18:28:55.249Z] CLI Version:   12.5.2
+[debug] [2023-08-29T18:28:55.249Z] Platform:      win32
+[debug] [2023-08-29T18:28:55.249Z] Node Version:  v16.13.2
+[debug] [2023-08-29T18:28:55.250Z] Time:          Tue Aug 29 2023 11:28:55 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-08-29T18:28:55.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T18:28:55.256Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T18:28:55.256Z] > authorizing via signed-in user (barcena.sylvia8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\syl_b\Desktop\NucampFolder\bootcamp-general\1- JavaScript\testproject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-29T18:30:03.096Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-29T18:30:03.096Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sbm-testprojectbuildanddeploy","name":"testproject"}
+[debug] [2023-08-29T18:30:03.784Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-08-29T18:30:03.785Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.4777236436805067670"}
+[debug] [2023-08-29T18:30:03.787Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 [none]
+[debug] [2023-08-29T18:30:04.476Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 200
+[debug] [2023-08-29T18:30:04.476Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 {"name":"operations/cp.4777236436805067670"}
+[debug] [2023-08-29T18:30:04.992Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:30:04.992Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 [none]
+[debug] [2023-08-29T18:30:05.680Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 200
+[debug] [2023-08-29T18:30:05.680Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 {"name":"operations/cp.4777236436805067670"}
+[debug] [2023-08-29T18:30:06.690Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:30:06.691Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 [none]
+[debug] [2023-08-29T18:30:07.441Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 200
+[debug] [2023-08-29T18:30:07.442Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4777236436805067670 {"name":"operations/cp.4777236436805067670","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"148082293098","projectId":"sbm-testprojectbuildanddeploy","lifecycleState":"ACTIVE","name":"testproject","createTime":"2023-08-29T18:30:06.310Z"}}
+[debug] [2023-08-29T18:30:07.444Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/sbm-testprojectbuildanddeploy:addFirebase [none]
+[debug] [2023-08-29T18:30:08.020Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/sbm-testprojectbuildanddeploy:addFirebase 403
+[debug] [2023-08-29T18:30:08.020Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/sbm-testprojectbuildanddeploy:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-08-29T18:30:08.021Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-08-29T18:30:08.025Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2023-08-29T18:31:08.148Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T18:31:08.150Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-29T18:31:08.151Z] CLI Version:   12.5.2
+[debug] [2023-08-29T18:31:08.151Z] Platform:      win32
+[debug] [2023-08-29T18:31:08.151Z] Node Version:  v16.13.2
+[debug] [2023-08-29T18:31:08.152Z] Time:          Tue Aug 29 2023 11:31:08 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-08-29T18:31:08.152Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T18:31:08.158Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T18:31:08.158Z] > authorizing via signed-in user (barcena.sylvia8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\syl_b\Desktop\NucampFolder\bootcamp-general\1- JavaScript\testproject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-29T18:31:45.905Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-29T18:31:45.905Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sylbtestproject2023","name":"testproject"}
+[debug] [2023-08-29T18:31:46.517Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-08-29T18:31:46.518Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7741297926861037891"}
+[debug] [2023-08-29T18:31:46.519Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 [none]
+[debug] [2023-08-29T18:31:47.166Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 200
+[debug] [2023-08-29T18:31:47.167Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 {"name":"operations/cp.7741297926861037891"}
+[debug] [2023-08-29T18:31:47.672Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:31:47.673Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 [none]
+[debug] [2023-08-29T18:31:48.295Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 200
+[debug] [2023-08-29T18:31:48.295Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 {"name":"operations/cp.7741297926861037891"}
+[debug] [2023-08-29T18:31:49.301Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:31:49.302Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 [none]
+[debug] [2023-08-29T18:31:49.925Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 200
+[debug] [2023-08-29T18:31:49.925Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7741297926861037891 {"name":"operations/cp.7741297926861037891","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"116439165350","projectId":"sylbtestproject2023","lifecycleState":"ACTIVE","name":"testproject","createTime":"2023-08-29T18:31:48.809Z"}}
+[debug] [2023-08-29T18:31:49.930Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/sylbtestproject2023:addFirebase [none]
+[debug] [2023-08-29T18:31:50.442Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/sylbtestproject2023:addFirebase 403
+[debug] [2023-08-29T18:31:50.442Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/sylbtestproject2023:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-08-29T18:31:50.443Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-08-29T18:31:50.444Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2023-08-29T18:32:17.403Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T18:32:17.405Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-29T18:32:17.405Z] CLI Version:   12.5.2
+[debug] [2023-08-29T18:32:17.405Z] Platform:      win32
+[debug] [2023-08-29T18:32:17.406Z] Node Version:  v16.13.2
+[debug] [2023-08-29T18:32:17.406Z] Time:          Tue Aug 29 2023 11:32:17 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-08-29T18:32:17.406Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T18:32:17.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T18:32:17.414Z] > authorizing via signed-in user (barcena.sylvia8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\syl_b\Desktop\NucampFolder\bootcamp-general\1- JavaScript\testproject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-29T18:32:47.241Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-29T18:32:47.241Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sbmtestprojectnucamptrial","name":"testprojectnucamptrial"}
+[debug] [2023-08-29T18:32:47.900Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-08-29T18:32:47.901Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6870690903547829066"}
+[debug] [2023-08-29T18:32:47.903Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 [none]
+[debug] [2023-08-29T18:32:48.371Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 200
+[debug] [2023-08-29T18:32:48.371Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 {"name":"operations/cp.6870690903547829066"}
+[debug] [2023-08-29T18:32:48.883Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:32:48.883Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 [none]
+[debug] [2023-08-29T18:32:49.540Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 200
+[debug] [2023-08-29T18:32:49.541Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 {"name":"operations/cp.6870690903547829066"}
+[debug] [2023-08-29T18:32:50.556Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:32:50.557Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 [none]
+[debug] [2023-08-29T18:32:51.218Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 200
+[debug] [2023-08-29T18:32:51.218Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 {"name":"operations/cp.6870690903547829066","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-08-29T18:32:53.234Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-29T18:32:53.235Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 [none]
+[debug] [2023-08-29T18:32:53.916Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 200
+[debug] [2023-08-29T18:32:53.917Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6870690903547829066 {"name":"operations/cp.6870690903547829066","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"289913692425","projectId":"sbmtestprojectnucamptrial","lifecycleState":"ACTIVE","name":"testprojectnucamptrial","createTime":"2023-08-29T18:32:50.606Z"}}
+[debug] [2023-08-29T18:32:53.921Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/sbmtestprojectnucamptrial:addFirebase [none]
+[debug] [2023-08-29T18:32:54.501Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/sbmtestprojectnucamptrial:addFirebase 403
+[debug] [2023-08-29T18:32:54.501Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/sbmtestprojectnucamptrial:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-08-29T18:32:54.503Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-08-29T18:32:54.507Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\syl_b\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
